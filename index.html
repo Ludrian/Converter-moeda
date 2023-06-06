@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$ConverterDinheiro</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,800;0,900;1,400;1,500;1,600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<header>
+    <h1>$Converter Dinheiro</h1>
+</header>
+<main>
+     <form id="form">
+        <section class="inputs-container">
+            <div class="form-group">
+                <label for="value-real">Valor a ser convertido </label>
+                <input 
+                type="number" 
+                placeholder="Ex:$20 ou €20 " 
+                id="value-real" 
+                max="1000000">
+
+            </div>
+
+
+            <div class="form-group">
+                <label for="currency">Escolha a moeda </label>
+                <select id="currency">
+                    <option value="">Selecione...</option>
+                    <option value="eur">€ Euro</option>
+                    <option value="dol">$ Dólar</option>
+                </select>
+            </div>
+        </section>
+        <button type="submit">Converter 🤑</button>
+     </form>
+     <h2 id="result">Resultado</h2>
+</main>
+
+<footer>
+    &copy; $ConverterDinheiro, 2023 - Todos os direitos reservados.
+</footer>
+
+
+
+<script src="./script.js"></script>
+
+
+</body>
+</html>
